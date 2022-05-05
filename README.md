@@ -11,6 +11,21 @@ Install
 
 I wrote a [blog post](http://zajdband.com/installing-hackdash) explaining the installation process. Also check the [wiki](https://github.com/danzajdband/hackdash/wiki) for more info and docs
 
+Local dev
+=========
+
+[Create an oauth app in github](https://github.com/settings/developers) with the callback URL http://localhost:3000/auth/github/callback
+
+Create a local .env file in the root of the repo with the following keys
+
+    GITHUB_CLIENT_ID
+    GITHUB_SECRET_KEY
+    GITHUB_CALLBACK_URL=http://localhost:3000/auth/github/callback
+    
+Run
+
+    docker-compose up
+
 Config
 ======
 
